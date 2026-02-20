@@ -1,0 +1,2 @@
+A web app that asks about the amount of money you have that you want to invest. AI model tells you the best place 
+to invest according to the time you want to invest for.

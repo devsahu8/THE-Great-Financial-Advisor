@@ -8,14 +8,24 @@
 
         <div class="card shadow">
 
-            <div class="card-header">
+            <div class="card-header text-center">
                 <h4>AI Investment Advisor</h4>
             </div>
 
-            <div class="card-body">
+            <div class="card-body"> 
+                <p class="text-muted">
+                    This project is designed for individuals who currently have minimal financial responsibilities 
+                    and want to grow their capital smartly. 
+                    
+                    If your budget is small, the goal is to provide a rapid head start strategy. 
+                    For larger budgets, the system suggests a balanced allocation between savings and investments.
+                    
+                    Market conditions play a crucial role in deciding investment strategy, 
+                    especially for low-budget investors.
+                </p>
 
                 <form method="POST">
-
+                    
                     {{ form.hidden_tag() }}
 
                     <!-- Amount field -->
@@ -23,9 +33,8 @@
 
                         {{ form.amount.label(class="form-label") }}
 
-                        {{ form.amount(class="form-control", placeholder="Enter amount in ₹") }}
+                        {{ form.amount(class="form-control", placeholder="Enter amount in ₹") }} 
 
-                        <!-- Show validation errors -->
                         {% for error in form.amount.errors %}
                             <div class="text-danger">
                                 {{ error }}
